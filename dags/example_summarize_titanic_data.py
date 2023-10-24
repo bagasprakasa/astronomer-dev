@@ -71,7 +71,7 @@ default_args={
 @dag(
     default_args=default_args,
     schedule=None,
-    start_date=pendulum.from_format("2023-10-24", "YYYY-MM-DD"),
+    start_date=pendulum.from_format("2023-10-24", "YYYY-MM-DD").in_tz("Asia/Jakarta"),
     catchup=False,
     owner_links={
         "Bagas Prakasa": "mailto:bagasprakasa19@gmail.com",
